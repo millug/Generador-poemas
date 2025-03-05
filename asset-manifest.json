@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Generador-poemas/static/css/main.1670ab67.css",
+    "main.js": "/Generador-poemas/static/js/main.1a1fc465.js",
+    "index.html": "/Generador-poemas/index.html",
+    "main.1670ab67.css.map": "/Generador-poemas/static/css/main.1670ab67.css.map",
+    "main.1a1fc465.js.map": "/Generador-poemas/static/js/main.1a1fc465.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1670ab67.css",
+    "static/js/main.1a1fc465.js"
+  ]
+}
