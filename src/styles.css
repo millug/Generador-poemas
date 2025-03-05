@@ -1,0 +1,153 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    min-height: 100vh;
+    margin: 0;
+    margin-top: 2%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.container {
+    background: linear-gradient(135deg, #ffdde1, #f89fab);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    border: 5px solid #ffb6c1;
+    box-shadow: 0 10px 20px rgba(255, 182, 193, 0.5);
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+.container:hover {
+    box-shadow: 0 15px 40px rgba(255, 182, 193, 0.5); /* Aumentar sombra en hover */
+    transform: scale(1.05); /* Ligero zoom cuando el mouse pasa por encima */
+}
+
+h1 {
+    color: #ff5a6f;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.5);
+}
+
+input, select, button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: solid;
+    border-color: #ff5a6f;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+
+input {
+    text-align: center;
+    width: calc(100% - 24px);
+}
+
+select {
+    text-align: center;
+}
+
+button {
+    background: #ff5a6f;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid #ffc6ce;
+}
+
+button:hover {
+    background: #ff2e50;
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+
+
+
+.poem-box {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(255, 234, 238, 0.9);
+    border-radius: 15px;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1);
+    white-space: pre-line;
+    font-size: 18px;
+    color: #ff2e50;
+    border: 3px dashed #f1788a;
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+/* Corazones flotantes */
+.heart {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #ff5a6f;
+    animation: float 5s linear infinite;
+}
+
+.heart::before, .heart::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #ff5a6f;
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -15px;
+    left: 0;
+}
+
+.heart::after {
+    left: 15px;
+    top: 0;
+}
+
+
+@keyframes float {
+    0% {
+        transform: translateY(100vh) translateX(0) scale(1); /* Comienza desde abajo */
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-50vh) translateX(var(--random-x)) scale(1.5); /* Subir hasta la mitad de la pantalla */
+        opacity: 0; /* Desvanecimiento */
+    }
+}
+
+input:focus, select:focus {
+    border-color: #ff5a6f; /* Borde rosa cuando está seleccionado */
+    outline: none; /* Elimina el borde por defecto */
+    background-color: #ffebf2; /* Fondo rosa claro */
+}
+
+select option:checked {
+    background-color: #ff5a6f; /* Rosa */
+    color: white;
+}
+
+/* Cambiar el fondo de las opciones cuando el cursor pasa sobre ellas */
+select option:hover {
+    background-color: #da648d; /* Fondo rosa claro cuando el cursor pasa por la opción */
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
