@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./styles.css"; // Importamos los estilos
 
-const API_KEY = "AIzaSyB9N0QrJCagGjrYOm6lcAILEFtvkErFJ_E";
+const API_KEY = "Aquí_API_KEY";
 
 const PoemGenerator = () => {
     const [word, setWord] = useState("");  // Maneja múltiples palabras
